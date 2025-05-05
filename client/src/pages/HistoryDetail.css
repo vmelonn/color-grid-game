@@ -1,0 +1,90 @@
+.history-detail-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.history-detail-container h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #0056b3;
+}
+
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.game-info-header {
+    background-color: #e9ecef;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.game-info-header p {
+    margin: 0.5rem 0;
+    color: #495057;
+}
+
+.game-grid-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+    border: 2px solid #adb5bd;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.history-grid .grid-row {
+    display: contents;
+}
+
+.history-grid .grid-cell {
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+}
+
+.history-grid .grid-cell.red {
+    background-color: #dc3545;
+}
+
+.history-grid .grid-cell.blue {
+    background-color: #0d6efd;
+}
+
+.history-grid .grid-cell.empty {
+    background-color: #f8f9fa;
+}
